@@ -10,5 +10,4 @@ $config = array (
     'name' => 'firstblog'
     )
   );
-mysql_query("SET NAMES utf8");
 require "db.php";
