@@ -26,7 +26,7 @@
                ?>
               <small>Категория: <a href="/articles.php?categorie=<?php echo $art_cat['id']; ?>"><?php echo $art_cat['title']; ?></a></small>
             </div>
-            <div class="article__info__preview"><?php  echo mb_substr(strip_tags($art['text']), 0, 100, 'utf-8') . ' ...'; ?></div>
+            <div class="article__info__preview"><?php  echo mb_substr(strip_tags($art['text']), 0, 50, 'utf-8') . ' ...'; ?></div>
           </div>
         </article>
         <?php
@@ -52,7 +52,7 @@
           <div class="article__info">
             <a href="/article.php?id=<?php echo $comment['articles_id']; ?>"><?php echo $comment['author']; ?></a>
             <div class="article__info__meta"></div>
-            <div class="article__info__preview"><?php  echo mb_substr(strip_tags($comment['text']), 0, 100, 'utf-8') . ' ...'; ?></div>
+            <div class="article__info__preview"><?php  echo mb_substr(strip_tags($comment['text']), 0, 50, 'utf-8') . ' ...'; ?></div>
           </div>
         </article>
         <?php

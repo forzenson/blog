@@ -53,7 +53,7 @@ require "includes/config.php"
                            ?>
                           <small>Категория: <a href="/articles.php?categorie=<?php echo $art_cat['id']; ?>"><?php echo $art_cat['title']; ?></a></small>
                         </div>
-                        <div class="article__info__preview"><?php  echo mb_substr($art['text'], 0, 100, 'utf-8'); ?></div>
+                        <div class="article__info__preview"><?php  echo mb_substr($art['text'], 0, 50, 'utf-8'); ?></div>
                       </div>
                     </article>
                     <?php

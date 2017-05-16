@@ -6,6 +6,8 @@ $connection = mysqli_connect (
   $config['db']['password'],
   $config['db']['name']
 );
+$connection->query("SET NAMES UTF8");
+$connection->set_charset("utf8");
 
 if ( $connection == false )
 {
@@ -13,4 +15,3 @@ if ( $connection == false )
   echo mysqli_connect_error();
   exit();
 }
-mysql_query("SET NAMES utf8");

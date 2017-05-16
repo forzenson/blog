@@ -121,7 +121,9 @@ body {
     .block > a:hover {
       border-bottom: 1px solid #333; }
   .block .block__content {
-    padding-top: 40px; }
+    padding-top: 40px;
+   }
+
 
 .articles.articles__horizontal {
   font-size: 0;
@@ -234,3 +236,4 @@ body {
   .form input[type="submit"].form__control:hover {
     cursor: pointer;
     opacity: 1; }
+
